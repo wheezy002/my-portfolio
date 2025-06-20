@@ -44,7 +44,7 @@
                     <h3>Frontend Developer</h3>
                     <p class="desc">A front-end developer designs and builds the user-facing part of websites and applications, focusing on the visual elements and user experience using technologies like HTML, CSS, and JavaScript. </p>
                     <div class="btn-sci">
-                        <a href="Mose.pdf" class="btn" download>Download CV</a>
+                        <a href="downloads/cv.pdf" class="btn" download>Download CV</a>
                         <div class="sci">
                             <a href="https://github.com/wheezy002">
                                 <i class='bx bxl-github' ></i>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="img-wrapper">
                     <div class="img-box home-img">
-                        <img src="000.png" alt="">
+                        <img src="images/000.png" alt="">
                     </div>
                 </div>
             </section>
@@ -75,7 +75,7 @@
             <section class="section about">
                 <div class="img-wrapper">
                     <div class="img-box about-img">
-                        <img src="000.png" alt="">
+                        <img src="images/000.png" alt="">
                     </div>
                 </div>
 
@@ -256,7 +256,7 @@
                     <div class="tab-grid portfolio-box work active">
                         <div class="tab-item portfolio-item">
                             <div class="work-img">
-                                <img src="work1.jpg" alt="">
+                                <img src="images/work1.jpg" alt="">
                             </div>
                             <div class="work-info">
                                 <h4>Frontend Project</h4>
@@ -278,7 +278,7 @@
                         </div>
                         <div class="tab-item portfolio-item">
                             <div class="work-img">
-                                <img src="work2.jpg" alt="">
+                                <img src="images/work2.jpg" alt="">
                             </div>
                             <div class="work-info">
                                 <h4>Full Stack Project</h4>
@@ -300,7 +300,7 @@
                         </div>
                         <div class="tab-item portfolio-item">
                             <div class="work-img">
-                                <img src="work3.jpg" alt="">
+                                <img src="images/work3.jpg" alt="">
                             </div>
                             <div class="work-info">
                                 <h4>Frontend Project</h4>
@@ -322,7 +322,7 @@
                         </div>
                         <div class="tab-item portfolio-item">
                             <div class="work-img">
-                                <img src="work4.jpg" alt="">
+                                <img src="images/work4.jpg" alt="">
                             </div>
                             <div class="work-info">
                                 <h4>Frontend Project</h4>
@@ -344,7 +344,7 @@
                         </div>
                         <div class="tab-item portfolio-item">
                             <div class="work-img">
-                                <img src="work5.jpg" alt="">
+                                <img src="images/work5.jpg" alt="">
                             </div>
                             <div class="work-info">
                                 <h4>Frontend Project</h4>
@@ -366,7 +366,7 @@
                         </div>
                         <div class="tab-item portfolio-item">
                             <div class="work-img">
-                                <img src="work6.jpg" alt="">
+                                <img src="images/work6.jpg" alt="">
                             </div>
                             <div class="work-info">
                                 <h4>Full Stack Project</h4>
@@ -440,22 +440,25 @@
                 </div>
             </section>
             <!-- contact section -->
-           <section class="contact-section">
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/xeokzzzz" method="POST" class="contact-form">
-    <label for="name">Name</label>
-    <input type="text" name="name" required>
-
-    <label for="email">Email</label>
-    <input type="email" name="email" required>
-
-    <label for="message">Message</label>
-    <textarea name="message" rows="5" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
+            <div class="section contact">
+                <h2 class="title">Contact</h2>
+                <div class="contact-wrapper">
+                    <form action="send_email.php" method="POST" class="contact-form">
+                        <h3>Let's Connect</h3>
+                        <div class="field-box">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="text" name="phone" placeholder="Phone Number" required>
+                            <input type="text" name="subject" placeholder="Email Subject" required>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
     <!-- JavaScript file script -->
     <script src="script.js"></script>
 </body>
